@@ -50,21 +50,21 @@ void left()
 // Callback function to the Movement Command subscriber
 void movementCommandCb(const max_msgs::MovementCommand::ConstPtr& msg)
 {
-  switch( msg.command )
+  switch( msg->command )
   {
-	  case 0:
+	  case max_msgs::MovementCommand::FORWARD:
 		forward();
 		break;
-	  case 1:
+	  case max_msgs::MovementCommand::BACKWARD:
 		backward();
 		break;
-	  case 2:
+	  case max_msgs::MovementCommand::STOP:
 		stop();
 		break;
-	  case 3:
+	  case max_msgs::MovementCommand::LEFT:
 		left();
 		break;
-	  case 4:
+	  case max_msgs::MovementCommand::RIGHT:
 		right();
 		break;
 	  default:

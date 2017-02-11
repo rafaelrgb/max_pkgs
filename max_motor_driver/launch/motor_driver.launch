@@ -1,5 +1,7 @@
 <launch>
 
-  <node name="motor_driver_node" pkg="motor_driver" type="motor_driver_node" respawn="false" output="screen"></node>
+  <node name="motor_driver" pkg="max_motor_driver" type="motor_driver" respawn="false" output="screen"></node>
+
+  <node name="max_teleop_node" pkg="max_teleop" type="max_teleop_node" />
 
 </launch>
