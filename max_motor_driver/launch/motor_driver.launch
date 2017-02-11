@@ -1,0 +1,5 @@
+<launch>
+
+  <node name="motor_driver_node" pkg="motor_driver" type="motor_driver_node" respawn="false" output="screen"></node>
+
+</launch>
