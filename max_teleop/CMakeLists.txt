@@ -4,11 +4,12 @@ project(max_teleop)
 find_package(catkin REQUIRED COMPONENTS
     roscpp
     max_msgs
+    geometry_msgs
 )
 
 catkin_package(
     INCLUDE_DIRS include
-    CATKIN_DEPENDS roscpp max_msgs
+    CATKIN_DEPENDS roscpp max_msgs geometry_msgs
 )
 
 include_directories(

@@ -5,12 +5,12 @@ FIND_LIBRARY(WIRINGPI_LIBRARY wiringPi /home/pi/wiringPi)
 
 find_package(catkin REQUIRED COMPONENTS
   roscpp
-  max_msgs
+  geometry_msgs
 )
 
 catkin_package(
     INCLUDE_DIRS include
-    CATKIN_DEPENDS roscpp max_msgs
+    CATKIN_DEPENDS roscpp geometry_msgs
 )
 
 include_directories(
