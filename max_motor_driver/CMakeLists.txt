@@ -23,3 +23,7 @@ include_directories(include ${catkin_INCLUDE_DIRS})
 add_executable(motor_driver src/motor_driver.cpp)
 add_dependencies(motor_driver ${catkin_EXPORTED_TARGETS} wiringPi)
 target_link_libraries(motor_driver ${catkin_LIBRARIES} ${WIRINGPI_LIBRARY})
+
+add_executable(teste src/teste.cpp)
+add_dependencies(teste ${catkin_EXPORTED_TARGETS} wiringPi)
+target_link_libraries(teste ${catkin_LIBRARIES} ${WIRINGPI_LIBRARY})

@@ -1,0 +1,11 @@
+<launch>
+
+  <arg name="camera_id" default="0" />
+
+  <node name="motor_driver" pkg="max_motor_driver" type="motor_driver" />
+
+  <node name="video_pub" pkg="max_camera" type="video_pub" output="screen" >
+    <param name="camera_id" value="$(arg camera_id)" />
+  </node>
+
+</launch>
